@@ -1,0 +1,580 @@
+2026-08-13 22:27:23,264 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 22:27:23,265 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 22:27:23,802 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 22:27:23,842 | ERROR | Failed to retrieve NCT05383703: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:23,852 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 22:27:23,901 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 22:27:23,934 | ERROR | Failed to retrieve NCT03638297: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:23,976 | ERROR | Failed to retrieve NCT04151329: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:23,985 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 22:27:24,256 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 22:27:24,297 | ERROR | Failed to retrieve NCT00217737: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,343 | ERROR | Failed to retrieve NCT00324805: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,382 | ERROR | Failed to retrieve NCT00334815: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,424 | ERROR | Failed to retrieve NCT00433511: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,475 | ERROR | Failed to retrieve NCT00565851: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,515 | ERROR | Failed to retrieve NCT00569127: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,565 | ERROR | Failed to retrieve NCT00588770: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,608 | ERROR | Failed to retrieve NCT00601900: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,654 | ERROR | Failed to retrieve NCT00861705: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,702 | ERROR | Failed to retrieve NCT00977574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,745 | ERROR | Failed to retrieve NCT01081262: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,790 | ERROR | Failed to retrieve NCT01167712: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,836 | ERROR | Failed to retrieve NCT01236560: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,876 | ERROR | Failed to retrieve NCT01950390: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,918 | ERROR | Failed to retrieve NCT02142803: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:24,980 | ERROR | Failed to retrieve NCT02839707: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,022 | ERROR | Failed to retrieve NCT02971501: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,061 | ERROR | Failed to retrieve NCT02974621: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,102 | ERROR | Failed to retrieve NCT02997228: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,154 | ERROR | Failed to retrieve NCT03030430: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,196 | ERROR | Failed to retrieve NCT03141684: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,232 | ERROR | Failed to retrieve NCT03329911: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,275 | ERROR | Failed to retrieve NCT03587311: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,314 | ERROR | Failed to retrieve NCT04164199: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,358 | ERROR | Failed to retrieve NCT04181060: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,359 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 22:27:25,410 | ERROR | Failed to retrieve NCT04919629: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,453 | ERROR | Failed to retrieve NCT04948697: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,496 | ERROR | Failed to retrieve NCT04981509: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,535 | ERROR | Failed to retrieve NCT05001880: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,574 | ERROR | Failed to retrieve NCT05063552: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,617 | ERROR | Failed to retrieve NCT05211323: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,655 | ERROR | Failed to retrieve NCT05394233: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,693 | ERROR | Failed to retrieve NCT05865574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,734 | ERROR | Failed to retrieve NCT06160206: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,772 | ERROR | Failed to retrieve NCT06393751: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,813 | ERROR | Failed to retrieve NCT06543576: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,866 | ERROR | Failed to retrieve NCT06580314: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,906 | ERROR | Failed to retrieve NCT06696768: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,944 | ERROR | Failed to retrieve NCT07074756: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:25,988 | ERROR | Failed to retrieve NCT07166406: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,034 | ERROR | Failed to retrieve NCT07198074: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,071 | ERROR | Failed to retrieve NCT07271355: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,110 | ERROR | Failed to retrieve NCT07288034: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,145 | ERROR | Failed to retrieve NCT07504588: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,240 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 22:27:26,286 | INFO | Found 4 unique studies for TY101
+2026-08-13 22:27:26,318 | ERROR | Failed to retrieve NCT01095549: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,350 | ERROR | Failed to retrieve NCT01138254: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,386 | ERROR | Failed to retrieve NCT04344067: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,420 | ERROR | Failed to retrieve NCT04458389: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:27:26,479 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 22:27:26,479 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 22:47:09,584 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 22:47:09,585 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 22:47:09,628 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 22:47:09,668 | ERROR | Failed to retrieve NCT05383703: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:09,673 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 22:47:09,715 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 22:47:09,750 | ERROR | Failed to retrieve NCT03638297: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:09,793 | ERROR | Failed to retrieve NCT04151329: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:09,804 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 22:47:10,254 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 22:47:10,297 | ERROR | Failed to retrieve NCT00217737: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,341 | ERROR | Failed to retrieve NCT00324805: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,377 | ERROR | Failed to retrieve NCT00334815: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,517 | ERROR | Failed to retrieve NCT00433511: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,572 | ERROR | Failed to retrieve NCT00565851: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,614 | ERROR | Failed to retrieve NCT00569127: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,660 | ERROR | Failed to retrieve NCT00588770: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,705 | ERROR | Failed to retrieve NCT00601900: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,755 | ERROR | Failed to retrieve NCT00861705: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,801 | ERROR | Failed to retrieve NCT00977574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,841 | ERROR | Failed to retrieve NCT01081262: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,888 | ERROR | Failed to retrieve NCT01167712: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:10,931 | ERROR | Failed to retrieve NCT01236560: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,071 | ERROR | Failed to retrieve NCT01950390: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,111 | ERROR | Failed to retrieve NCT02142803: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,176 | ERROR | Failed to retrieve NCT02839707: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,228 | ERROR | Failed to retrieve NCT02971501: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,267 | ERROR | Failed to retrieve NCT02974621: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,311 | ERROR | Failed to retrieve NCT02997228: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,347 | ERROR | Failed to retrieve NCT03030430: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,393 | ERROR | Failed to retrieve NCT03141684: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,432 | ERROR | Failed to retrieve NCT03329911: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,559 | ERROR | Failed to retrieve NCT03587311: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,599 | ERROR | Failed to retrieve NCT04164199: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,648 | ERROR | Failed to retrieve NCT04181060: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,648 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 22:47:11,686 | ERROR | Failed to retrieve NCT04919629: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,736 | ERROR | Failed to retrieve NCT04948697: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,775 | ERROR | Failed to retrieve NCT04981509: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,815 | ERROR | Failed to retrieve NCT05001880: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,858 | ERROR | Failed to retrieve NCT05063552: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,897 | ERROR | Failed to retrieve NCT05211323: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,937 | ERROR | Failed to retrieve NCT05394233: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:11,980 | ERROR | Failed to retrieve NCT05865574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,111 | ERROR | Failed to retrieve NCT06160206: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,154 | ERROR | Failed to retrieve NCT06393751: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,190 | ERROR | Failed to retrieve NCT06543576: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,238 | ERROR | Failed to retrieve NCT06580314: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,277 | ERROR | Failed to retrieve NCT06696768: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,319 | ERROR | Failed to retrieve NCT07074756: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,370 | ERROR | Failed to retrieve NCT07166406: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,415 | ERROR | Failed to retrieve NCT07198074: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,463 | ERROR | Failed to retrieve NCT07271355: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,499 | ERROR | Failed to retrieve NCT07288034: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,607 | ERROR | Failed to retrieve NCT07504588: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,706 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 22:47:12,752 | INFO | Found 4 unique studies for TY101
+2026-08-13 22:47:12,783 | ERROR | Failed to retrieve NCT01095549: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,819 | ERROR | Failed to retrieve NCT01138254: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,875 | ERROR | Failed to retrieve NCT04344067: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,915 | ERROR | Failed to retrieve NCT04458389: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:47:12,979 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 22:47:12,979 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 22:50:17,049 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 22:50:17,050 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 22:50:17,152 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 22:50:17,190 | ERROR | Failed to retrieve NCT05383703: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:17,195 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 22:50:17,250 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 22:50:17,303 | ERROR | Failed to retrieve NCT03638297: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:17,340 | ERROR | Failed to retrieve NCT04151329: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:17,354 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 22:50:17,657 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 22:50:17,714 | ERROR | Failed to retrieve NCT00217737: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:17,757 | ERROR | Failed to retrieve NCT00324805: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:17,881 | ERROR | Failed to retrieve NCT00334815: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:17,926 | ERROR | Failed to retrieve NCT00433511: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:17,970 | ERROR | Failed to retrieve NCT00565851: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,010 | ERROR | Failed to retrieve NCT00569127: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,054 | ERROR | Failed to retrieve NCT00588770: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,096 | ERROR | Failed to retrieve NCT00601900: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,225 | ERROR | Failed to retrieve NCT00861705: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,267 | ERROR | Failed to retrieve NCT00977574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,307 | ERROR | Failed to retrieve NCT01081262: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,436 | ERROR | Failed to retrieve NCT01167712: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,475 | ERROR | Failed to retrieve NCT01236560: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,529 | ERROR | Failed to retrieve NCT01950390: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,567 | ERROR | Failed to retrieve NCT02142803: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,623 | ERROR | Failed to retrieve NCT02839707: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,738 | ERROR | Failed to retrieve NCT02971501: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,781 | ERROR | Failed to retrieve NCT02974621: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,819 | ERROR | Failed to retrieve NCT02997228: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,922 | ERROR | Failed to retrieve NCT03030430: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:18,966 | ERROR | Failed to retrieve NCT03141684: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,004 | ERROR | Failed to retrieve NCT03329911: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,046 | ERROR | Failed to retrieve NCT03587311: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,085 | ERROR | Failed to retrieve NCT04164199: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,137 | ERROR | Failed to retrieve NCT04181060: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,137 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 22:50:19,257 | ERROR | Failed to retrieve NCT04919629: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,297 | ERROR | Failed to retrieve NCT04948697: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,341 | ERROR | Failed to retrieve NCT04981509: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,450 | ERROR | Failed to retrieve NCT05001880: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,492 | ERROR | Failed to retrieve NCT05063552: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,534 | ERROR | Failed to retrieve NCT05211323: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,573 | ERROR | Failed to retrieve NCT05394233: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,613 | ERROR | Failed to retrieve NCT05865574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,656 | ERROR | Failed to retrieve NCT06160206: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,780 | ERROR | Failed to retrieve NCT06393751: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,820 | ERROR | Failed to retrieve NCT06543576: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,866 | ERROR | Failed to retrieve NCT06580314: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:19,976 | ERROR | Failed to retrieve NCT06696768: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,017 | ERROR | Failed to retrieve NCT07074756: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,058 | ERROR | Failed to retrieve NCT07166406: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,098 | ERROR | Failed to retrieve NCT07198074: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,134 | ERROR | Failed to retrieve NCT07271355: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,171 | ERROR | Failed to retrieve NCT07288034: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,324 | ERROR | Failed to retrieve NCT07504588: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,422 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 22:50:20,530 | INFO | Found 4 unique studies for TY101
+2026-08-13 22:50:20,562 | ERROR | Failed to retrieve NCT01095549: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,596 | ERROR | Failed to retrieve NCT01138254: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,637 | ERROR | Failed to retrieve NCT04344067: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,673 | ERROR | Failed to retrieve NCT04458389: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:50:20,731 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 22:50:20,731 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 22:54:56,225 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 22:54:56,227 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 22:54:56,268 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 22:54:56,302 | ERROR | Failed to retrieve NCT05383703: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:56,307 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 22:54:56,351 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 22:54:56,389 | ERROR | Failed to retrieve NCT03638297: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:56,428 | ERROR | Failed to retrieve NCT04151329: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:56,449 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 22:54:56,813 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 22:54:56,857 | ERROR | Failed to retrieve NCT00217737: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:56,897 | ERROR | Failed to retrieve NCT00324805: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:56,932 | ERROR | Failed to retrieve NCT00334815: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:56,979 | ERROR | Failed to retrieve NCT00433511: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,118 | ERROR | Failed to retrieve NCT00565851: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,164 | ERROR | Failed to retrieve NCT00569127: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,217 | ERROR | Failed to retrieve NCT00588770: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,265 | ERROR | Failed to retrieve NCT00601900: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,325 | ERROR | Failed to retrieve NCT00861705: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,376 | ERROR | Failed to retrieve NCT00977574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,421 | ERROR | Failed to retrieve NCT01081262: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,476 | ERROR | Failed to retrieve NCT01167712: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,526 | ERROR | Failed to retrieve NCT01236560: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,685 | ERROR | Failed to retrieve NCT01950390: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,726 | ERROR | Failed to retrieve NCT02142803: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,782 | ERROR | Failed to retrieve NCT02839707: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,823 | ERROR | Failed to retrieve NCT02971501: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,871 | ERROR | Failed to retrieve NCT02974621: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,916 | ERROR | Failed to retrieve NCT02997228: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:57,956 | ERROR | Failed to retrieve NCT03030430: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,000 | ERROR | Failed to retrieve NCT03141684: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,041 | ERROR | Failed to retrieve NCT03329911: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,174 | ERROR | Failed to retrieve NCT03587311: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,218 | ERROR | Failed to retrieve NCT04164199: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,262 | ERROR | Failed to retrieve NCT04181060: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,263 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 22:54:58,304 | ERROR | Failed to retrieve NCT04919629: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,355 | ERROR | Failed to retrieve NCT04948697: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,400 | ERROR | Failed to retrieve NCT04981509: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,439 | ERROR | Failed to retrieve NCT05001880: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,513 | ERROR | Failed to retrieve NCT05063552: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,556 | ERROR | Failed to retrieve NCT05211323: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,693 | ERROR | Failed to retrieve NCT05394233: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,738 | ERROR | Failed to retrieve NCT05865574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,781 | ERROR | Failed to retrieve NCT06160206: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,825 | ERROR | Failed to retrieve NCT06393751: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,864 | ERROR | Failed to retrieve NCT06543576: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,916 | ERROR | Failed to retrieve NCT06580314: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:58,961 | ERROR | Failed to retrieve NCT06696768: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,004 | ERROR | Failed to retrieve NCT07074756: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,050 | ERROR | Failed to retrieve NCT07166406: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,099 | ERROR | Failed to retrieve NCT07198074: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,220 | ERROR | Failed to retrieve NCT07271355: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,262 | ERROR | Failed to retrieve NCT07288034: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,308 | ERROR | Failed to retrieve NCT07504588: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,413 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 22:54:59,457 | INFO | Found 4 unique studies for TY101
+2026-08-13 22:54:59,489 | ERROR | Failed to retrieve NCT01095549: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,525 | ERROR | Failed to retrieve NCT01138254: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,571 | ERROR | Failed to retrieve NCT04344067: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,609 | ERROR | Failed to retrieve NCT04458389: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 22:54:59,696 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 22:54:59,696 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 23:03:27,280 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 23:03:27,282 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 23:03:27,333 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 23:03:27,377 | ERROR | Failed to retrieve NCT05383703: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:27,385 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 23:03:27,433 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 23:03:27,475 | ERROR | Failed to retrieve NCT03638297: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:27,520 | ERROR | Failed to retrieve NCT04151329: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:27,533 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 23:03:27,964 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 23:03:28,009 | ERROR | Failed to retrieve NCT00217737: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,055 | ERROR | Failed to retrieve NCT00324805: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,092 | ERROR | Failed to retrieve NCT00334815: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,133 | ERROR | Failed to retrieve NCT00433511: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,180 | ERROR | Failed to retrieve NCT00565851: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,305 | ERROR | Failed to retrieve NCT00569127: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,349 | ERROR | Failed to retrieve NCT00588770: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,392 | ERROR | Failed to retrieve NCT00601900: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,438 | ERROR | Failed to retrieve NCT00861705: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,487 | ERROR | Failed to retrieve NCT00977574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,537 | ERROR | Failed to retrieve NCT01081262: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,588 | ERROR | Failed to retrieve NCT01167712: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,629 | ERROR | Failed to retrieve NCT01236560: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,676 | ERROR | Failed to retrieve NCT01950390: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,717 | ERROR | Failed to retrieve NCT02142803: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,873 | ERROR | Failed to retrieve NCT02839707: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,916 | ERROR | Failed to retrieve NCT02971501: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:28,957 | ERROR | Failed to retrieve NCT02974621: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,000 | ERROR | Failed to retrieve NCT02997228: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,041 | ERROR | Failed to retrieve NCT03030430: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,082 | ERROR | Failed to retrieve NCT03141684: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,121 | ERROR | Failed to retrieve NCT03329911: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,164 | ERROR | Failed to retrieve NCT03587311: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,205 | ERROR | Failed to retrieve NCT04164199: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,250 | ERROR | Failed to retrieve NCT04181060: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,250 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 23:03:29,379 | ERROR | Failed to retrieve NCT04919629: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,426 | ERROR | Failed to retrieve NCT04948697: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,465 | ERROR | Failed to retrieve NCT04981509: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,504 | ERROR | Failed to retrieve NCT05001880: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,553 | ERROR | Failed to retrieve NCT05063552: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,595 | ERROR | Failed to retrieve NCT05211323: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,635 | ERROR | Failed to retrieve NCT05394233: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,694 | ERROR | Failed to retrieve NCT05865574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,732 | ERROR | Failed to retrieve NCT06160206: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,772 | ERROR | Failed to retrieve NCT06393751: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,897 | ERROR | Failed to retrieve NCT06543576: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,946 | ERROR | Failed to retrieve NCT06580314: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:29,989 | ERROR | Failed to retrieve NCT06696768: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,030 | ERROR | Failed to retrieve NCT07074756: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,074 | ERROR | Failed to retrieve NCT07166406: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,117 | ERROR | Failed to retrieve NCT07198074: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,153 | ERROR | Failed to retrieve NCT07271355: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,197 | ERROR | Failed to retrieve NCT07288034: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,234 | ERROR | Failed to retrieve NCT07504588: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,331 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 23:03:30,424 | INFO | Found 4 unique studies for TY101
+2026-08-13 23:03:30,463 | ERROR | Failed to retrieve NCT01095549: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,501 | ERROR | Failed to retrieve NCT01138254: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,537 | ERROR | Failed to retrieve NCT04344067: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,579 | ERROR | Failed to retrieve NCT04458389: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:03:30,647 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 23:03:30,647 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 23:10:16,354 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 23:10:16,355 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 23:10:16,401 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 23:10:16,437 | ERROR | Failed to retrieve NCT05383703: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:16,442 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 23:10:16,484 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 23:10:16,518 | ERROR | Failed to retrieve NCT03638297: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:16,692 | ERROR | Failed to retrieve NCT04151329: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:16,712 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 23:10:17,122 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 23:10:17,233 | ERROR | Failed to retrieve NCT00217737: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,292 | ERROR | Failed to retrieve NCT00324805: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,332 | ERROR | Failed to retrieve NCT00334815: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,386 | ERROR | Failed to retrieve NCT00433511: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,446 | ERROR | Failed to retrieve NCT00565851: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,496 | ERROR | Failed to retrieve NCT00569127: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,556 | ERROR | Failed to retrieve NCT00588770: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,604 | ERROR | Failed to retrieve NCT00601900: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,764 | ERROR | Failed to retrieve NCT00861705: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,820 | ERROR | Failed to retrieve NCT00977574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,917 | ERROR | Failed to retrieve NCT01081262: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:17,974 | ERROR | Failed to retrieve NCT01167712: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,023 | ERROR | Failed to retrieve NCT01236560: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,096 | ERROR | Failed to retrieve NCT01950390: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,137 | ERROR | Failed to retrieve NCT02142803: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,261 | ERROR | Failed to retrieve NCT02839707: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,302 | ERROR | Failed to retrieve NCT02971501: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,366 | ERROR | Failed to retrieve NCT02974621: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,417 | ERROR | Failed to retrieve NCT02997228: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,464 | ERROR | Failed to retrieve NCT03030430: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,503 | ERROR | Failed to retrieve NCT03141684: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,547 | ERROR | Failed to retrieve NCT03329911: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,588 | ERROR | Failed to retrieve NCT03587311: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,626 | ERROR | Failed to retrieve NCT04164199: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,678 | ERROR | Failed to retrieve NCT04181060: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,678 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 23:10:18,797 | ERROR | Failed to retrieve NCT04919629: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,844 | ERROR | Failed to retrieve NCT04948697: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,893 | ERROR | Failed to retrieve NCT04981509: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,943 | ERROR | Failed to retrieve NCT05001880: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:18,989 | ERROR | Failed to retrieve NCT05063552: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,031 | ERROR | Failed to retrieve NCT05211323: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,078 | ERROR | Failed to retrieve NCT05394233: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,138 | ERROR | Failed to retrieve NCT05865574: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,183 | ERROR | Failed to retrieve NCT06160206: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,292 | ERROR | Failed to retrieve NCT06393751: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,332 | ERROR | Failed to retrieve NCT06543576: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,470 | ERROR | Failed to retrieve NCT06580314: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,530 | ERROR | Failed to retrieve NCT06696768: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,574 | ERROR | Failed to retrieve NCT07074756: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,630 | ERROR | Failed to retrieve NCT07166406: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,681 | ERROR | Failed to retrieve NCT07198074: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,819 | ERROR | Failed to retrieve NCT07271355: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,868 | ERROR | Failed to retrieve NCT07288034: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:19,961 | ERROR | Failed to retrieve NCT07504588: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:20,069 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 23:10:20,122 | INFO | Found 4 unique studies for TY101
+2026-08-13 23:10:20,154 | ERROR | Failed to retrieve NCT01095549: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:20,189 | ERROR | Failed to retrieve NCT01138254: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:20,340 | ERROR | Failed to retrieve NCT04344067: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:20,379 | ERROR | Failed to retrieve NCT04458389: append_change() missing 1 required positional argument: 'new_value'
+2026-08-13 23:10:20,469 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 23:10:20,470 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 23:18:47,239 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 23:18:47,240 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 23:18:47,278 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 23:18:47,408 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 23:18:47,460 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 23:18:47,570 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 23:18:47,864 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 23:18:49,249 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 23:18:50,345 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 23:18:50,388 | INFO | Found 4 unique studies for TY101
+2026-08-13 23:18:50,699 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 23:18:50,699 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 23:26:35,175 | WARNING | Existing output did not match the current template. Backed it up to /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker_backup_20260813_232635.xlsx
+2026-08-13 23:26:35,476 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 23:26:35,476 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 23:26:35,518 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 23:26:35,552 | INFO | NCT05383703: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:35,556 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 23:26:35,599 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 23:26:35,632 | INFO | NCT03638297: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:35,673 | INFO | NCT04151329: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:35,684 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 23:26:36,075 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 23:26:36,123 | INFO | NCT00217737: hasResults=TRUE; resultsSection=True; resultRows=1023
+2026-08-13 23:26:36,169 | INFO | NCT00324805: hasResults=TRUE; resultsSection=True; resultRows=470
+2026-08-13 23:26:36,211 | INFO | NCT00334815: hasResults=TRUE; resultsSection=True; resultRows=310
+2026-08-13 23:26:36,372 | INFO | NCT00433511: hasResults=TRUE; resultsSection=True; resultRows=1546
+2026-08-13 23:26:36,448 | INFO | NCT00565851: hasResults=TRUE; resultsSection=True; resultRows=4125
+2026-08-13 23:26:36,495 | INFO | NCT00569127: hasResults=TRUE; resultsSection=True; resultRows=556
+2026-08-13 23:26:36,548 | INFO | NCT00588770: hasResults=TRUE; resultsSection=True; resultRows=337
+2026-08-13 23:26:36,597 | INFO | NCT00601900: hasResults=TRUE; resultsSection=True; resultRows=558
+2026-08-13 23:26:36,653 | INFO | NCT00861705: hasResults=TRUE; resultsSection=True; resultRows=2099
+2026-08-13 23:26:36,704 | INFO | NCT00977574: hasResults=TRUE; resultsSection=True; resultRows=1350
+2026-08-13 23:26:36,840 | INFO | NCT01081262: hasResults=TRUE; resultsSection=True; resultRows=490
+2026-08-13 23:26:36,898 | INFO | NCT01167712: hasResults=TRUE; resultsSection=True; resultRows=1108
+2026-08-13 23:26:36,943 | INFO | NCT01236560: hasResults=TRUE; resultsSection=True; resultRows=507
+2026-08-13 23:26:36,988 | INFO | NCT01950390: hasResults=TRUE; resultsSection=True; resultRows=316
+2026-08-13 23:26:37,097 | INFO | NCT02142803: hasResults=TRUE; resultsSection=True; resultRows=617
+2026-08-13 23:26:37,167 | INFO | NCT02839707: hasResults=TRUE; resultsSection=True; resultRows=1601
+2026-08-13 23:26:37,236 | INFO | NCT02971501: hasResults=TRUE; resultsSection=True; resultRows=269
+2026-08-13 23:26:37,381 | INFO | NCT02974621: hasResults=TRUE; resultsSection=True; resultRows=591
+2026-08-13 23:26:37,421 | INFO | NCT02997228: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,455 | INFO | NCT03030430: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,496 | INFO | NCT03141684: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,539 | INFO | NCT03329911: hasResults=TRUE; resultsSection=True; resultRows=94
+2026-08-13 23:26:37,581 | INFO | NCT03587311: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,616 | INFO | NCT04164199: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,670 | INFO | NCT04181060: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,670 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 23:26:37,707 | INFO | NCT04919629: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,759 | INFO | NCT04948697: hasResults=TRUE; resultsSection=True; resultRows=675
+2026-08-13 23:26:37,892 | INFO | NCT04981509: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,932 | INFO | NCT05001880: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:37,976 | INFO | NCT05063552: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,024 | INFO | NCT05211323: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,061 | INFO | NCT05394233: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,105 | INFO | NCT05865574: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,143 | INFO | NCT06160206: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,180 | INFO | NCT06393751: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,218 | INFO | NCT06543576: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,265 | INFO | NCT06580314: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,306 | INFO | NCT06696768: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,432 | INFO | NCT07074756: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,474 | INFO | NCT07166406: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,519 | INFO | NCT07198074: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,565 | INFO | NCT07271355: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,605 | INFO | NCT07288034: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:26:38,644 | INFO | NCT07504588: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:27:14,905 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 23:27:14,954 | INFO | Found 4 unique studies for TY101
+2026-08-13 23:27:15,103 | INFO | NCT01095549: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:27:15,137 | INFO | NCT01138254: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:27:15,176 | INFO | NCT04344067: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:27:15,217 | INFO | NCT04458389: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:27:20,588 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 23:27:20,588 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 23:42:05,279 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 23:42:05,280 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 23:42:05,330 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 23:42:05,363 | INFO | NCT05383703: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:05,367 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 23:42:05,409 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 23:42:05,452 | INFO | NCT03638297: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:05,573 | INFO | NCT04151329: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:05,601 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 23:42:05,914 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 23:42:05,965 | INFO | NCT00217737: hasResults=TRUE; resultsSection=True; resultRows=1023
+2026-08-13 23:42:06,095 | INFO | NCT00324805: hasResults=TRUE; resultsSection=True; resultRows=470
+2026-08-13 23:42:06,137 | INFO | NCT00334815: hasResults=TRUE; resultsSection=True; resultRows=310
+2026-08-13 23:42:06,195 | INFO | NCT00433511: hasResults=TRUE; resultsSection=True; resultRows=1546
+2026-08-13 23:42:06,265 | INFO | NCT00565851: hasResults=TRUE; resultsSection=True; resultRows=4125
+2026-08-13 23:42:06,310 | INFO | NCT00569127: hasResults=TRUE; resultsSection=True; resultRows=556
+2026-08-13 23:42:06,362 | INFO | NCT00588770: hasResults=TRUE; resultsSection=True; resultRows=337
+2026-08-13 23:42:06,410 | INFO | NCT00601900: hasResults=TRUE; resultsSection=True; resultRows=558
+2026-08-13 23:42:06,485 | INFO | NCT00861705: hasResults=TRUE; resultsSection=True; resultRows=2099
+2026-08-13 23:42:06,539 | INFO | NCT00977574: hasResults=TRUE; resultsSection=True; resultRows=1350
+2026-08-13 23:42:06,664 | INFO | NCT01081262: hasResults=TRUE; resultsSection=True; resultRows=490
+2026-08-13 23:42:06,731 | INFO | NCT01167712: hasResults=TRUE; resultsSection=True; resultRows=1108
+2026-08-13 23:42:06,779 | INFO | NCT01236560: hasResults=TRUE; resultsSection=True; resultRows=507
+2026-08-13 23:42:06,831 | INFO | NCT01950390: hasResults=TRUE; resultsSection=True; resultRows=316
+2026-08-13 23:42:06,885 | INFO | NCT02142803: hasResults=TRUE; resultsSection=True; resultRows=617
+2026-08-13 23:42:06,954 | INFO | NCT02839707: hasResults=TRUE; resultsSection=True; resultRows=1601
+2026-08-13 23:42:06,996 | INFO | NCT02971501: hasResults=TRUE; resultsSection=True; resultRows=269
+2026-08-13 23:42:07,049 | INFO | NCT02974621: hasResults=TRUE; resultsSection=True; resultRows=591
+2026-08-13 23:42:07,189 | INFO | NCT02997228: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,224 | INFO | NCT03030430: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,265 | INFO | NCT03141684: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,309 | INFO | NCT03329911: hasResults=TRUE; resultsSection=True; resultRows=94
+2026-08-13 23:42:07,344 | INFO | NCT03587311: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,383 | INFO | NCT04164199: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,433 | INFO | NCT04181060: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,434 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 23:42:07,480 | INFO | NCT04919629: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,535 | INFO | NCT04948697: hasResults=TRUE; resultsSection=True; resultRows=675
+2026-08-13 23:42:07,573 | INFO | NCT04981509: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,698 | INFO | NCT05001880: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,738 | INFO | NCT05063552: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,781 | INFO | NCT05211323: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,824 | INFO | NCT05394233: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,891 | INFO | NCT05865574: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,928 | INFO | NCT06160206: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:07,966 | INFO | NCT06393751: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,065 | INFO | NCT06543576: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,199 | INFO | NCT06580314: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,236 | INFO | NCT06696768: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,282 | INFO | NCT07074756: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,322 | INFO | NCT07166406: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,371 | INFO | NCT07198074: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,413 | INFO | NCT07271355: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,452 | INFO | NCT07288034: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:08,494 | INFO | NCT07504588: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:45,800 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 23:42:45,942 | INFO | Found 4 unique studies for TY101
+2026-08-13 23:42:45,989 | INFO | NCT01095549: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:46,032 | INFO | NCT01138254: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:46,072 | INFO | NCT04344067: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:46,111 | INFO | NCT04458389: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:42:51,473 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 23:42:51,474 | INFO | Tracked 51 study records across 4 assets
+2026-08-13 23:48:40,157 | INFO | ClinicalTrials.gov dataTimestamp=2026-08-13T09:00:04
+2026-08-13 23:48:40,158 | INFO | Searching asset=MNC-168 using term=MNC-168
+2026-08-13 23:48:40,200 | INFO | Found 1 unique studies for MNC-168
+2026-08-13 23:48:40,237 | INFO | NCT05383703: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:40,241 | INFO | Searching asset=BAT1306 using term=BAT1306
+2026-08-13 23:48:40,374 | INFO | Found 2 unique studies for BAT1306
+2026-08-13 23:48:40,415 | INFO | NCT03638297: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:40,465 | INFO | NCT04151329: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:40,479 | INFO | Searching asset=BAT1706 using term=BAT1706
+2026-08-13 23:48:40,821 | INFO | Found 44 unique studies for BAT1706
+2026-08-13 23:48:40,935 | INFO | NCT00217737: hasResults=TRUE; resultsSection=True; resultRows=1023
+2026-08-13 23:48:40,989 | INFO | NCT00324805: hasResults=TRUE; resultsSection=True; resultRows=470
+2026-08-13 23:48:41,033 | INFO | NCT00334815: hasResults=TRUE; resultsSection=True; resultRows=310
+2026-08-13 23:48:41,089 | INFO | NCT00433511: hasResults=TRUE; resultsSection=True; resultRows=1546
+2026-08-13 23:48:41,166 | INFO | NCT00565851: hasResults=TRUE; resultsSection=True; resultRows=4125
+2026-08-13 23:48:41,208 | INFO | NCT00569127: hasResults=TRUE; resultsSection=True; resultRows=556
+2026-08-13 23:48:41,250 | INFO | NCT00588770: hasResults=TRUE; resultsSection=True; resultRows=337
+2026-08-13 23:48:41,295 | INFO | NCT00601900: hasResults=TRUE; resultsSection=True; resultRows=558
+2026-08-13 23:48:41,474 | INFO | NCT00861705: hasResults=TRUE; resultsSection=True; resultRows=2099
+2026-08-13 23:48:41,520 | INFO | NCT00977574: hasResults=TRUE; resultsSection=True; resultRows=1350
+2026-08-13 23:48:41,564 | INFO | NCT01081262: hasResults=TRUE; resultsSection=True; resultRows=490
+2026-08-13 23:48:41,615 | INFO | NCT01167712: hasResults=TRUE; resultsSection=True; resultRows=1108
+2026-08-13 23:48:41,671 | INFO | NCT01236560: hasResults=TRUE; resultsSection=True; resultRows=507
+2026-08-13 23:48:41,723 | INFO | NCT01950390: hasResults=TRUE; resultsSection=True; resultRows=316
+2026-08-13 23:48:41,773 | INFO | NCT02142803: hasResults=TRUE; resultsSection=True; resultRows=617
+2026-08-13 23:48:41,847 | INFO | NCT02839707: hasResults=TRUE; resultsSection=True; resultRows=1601
+2026-08-13 23:48:41,982 | INFO | NCT02971501: hasResults=TRUE; resultsSection=True; resultRows=269
+2026-08-13 23:48:42,031 | INFO | NCT02974621: hasResults=TRUE; resultsSection=True; resultRows=591
+2026-08-13 23:48:42,075 | INFO | NCT02997228: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,113 | INFO | NCT03030430: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,154 | INFO | NCT03141684: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,196 | INFO | NCT03329911: hasResults=TRUE; resultsSection=True; resultRows=94
+2026-08-13 23:48:42,235 | INFO | NCT03587311: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,275 | INFO | NCT04164199: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,319 | INFO | NCT04181060: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,319 | INFO | Processed 25/44 studies for BAT1706
+2026-08-13 23:48:42,362 | INFO | NCT04919629: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,484 | INFO | NCT04948697: hasResults=TRUE; resultsSection=True; resultRows=675
+2026-08-13 23:48:42,523 | INFO | NCT04981509: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,565 | INFO | NCT05001880: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,608 | INFO | NCT05063552: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,648 | INFO | NCT05211323: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,684 | INFO | NCT05394233: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,723 | INFO | NCT05865574: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,763 | INFO | NCT06160206: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,806 | INFO | NCT06393751: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,847 | INFO | NCT06543576: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:42,896 | INFO | NCT06580314: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:43,027 | INFO | NCT06696768: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:43,067 | INFO | NCT07074756: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:43,107 | INFO | NCT07166406: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:43,149 | INFO | NCT07198074: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:43,189 | INFO | NCT07271355: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:43,232 | INFO | NCT07288034: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:48:43,274 | INFO | NCT07504588: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:49:20,977 | INFO | Searching asset=TY101 using term=TY101
+2026-08-13 23:49:21,046 | INFO | Found 4 unique studies for TY101
+2026-08-13 23:49:21,095 | INFO | NCT01095549: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:49:21,140 | INFO | NCT01138254: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:49:21,263 | INFO | NCT04344067: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:49:21,306 | INFO | NCT04458389: hasResults=FALSE; resultsSection=False; resultRows=0
+2026-08-13 23:49:26,963 | INFO | Saved workbook: /Users/chachaen/Desktop/Clinicaltrail/ClinicalTrials_Tracker.xlsx
+2026-08-13 23:49:26,963 | INFO | Tracked 51 study records across 4 assets
