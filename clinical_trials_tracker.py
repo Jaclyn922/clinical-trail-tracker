@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import logging
+import re
 import shutil
 import sys
 import time
@@ -13,7 +14,7 @@ from typing import Any
 
 import requests
 from openpyxl import load_workbook
-from openpyxl.styles import Alignment, Font
+from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 
@@ -28,17 +29,30 @@ MASTER_TEMPLATE = "ClinicalTrials_Tracker_TEMPLATE_FINAL.xlsx"
 OUTPUT_FILE = "ClinicalTrials_Tracker.xlsx"
 
 
-CONFIG_HEADER_ROW = 4
 
 DATA_HEADER_ROW = 1
 
+OVERVIEW_SHEET_NAME = "Overview"
 
-ASSETS = [
-    "MNC-168",
-    "BAT1306",
-    "BAT1706",
-    "TY101",
+RESULTS_SHEET_SUFFIX = "_Results"
+
+
+REQUIRED_BASE_SHEETS = [
+    "README",
+    "Dashboard",
+    "Config",
+    OVERVIEW_SHEET_NAME,
+    "Change_Log",
 ]
+
+
+CONFIG_REQUIRED_HEADERS = ["Asset", "Search Term", "NCT IDs", "Active"]
+
+
+RESULTS_HEADER_FILL = PatternFill(
+    fgColor="0F6B78",
+    fill_type="solid",
+)
 
 
 
@@ -103,7 +117,7 @@ CHANGE_COLUMNS = [
     "New Value",
 ]
 
-# These fields are compared between runs.
+
 TRACKED_FIELDS = [
     column
     for column in OVERVIEW_COLUMNS
@@ -161,10 +175,7 @@ def clean_text(value: Any) -> str:
 
 
 def normalize_scalar(value: Any) -> Any:
-    """
-    Keep numeric values numeric in Excel whenever possible.
-    Preserve non-numeric values such as NA or descriptive text.
-    """
+
     if value is None:
         return ""
 
@@ -475,8 +486,7 @@ def extract_overview(
         study.get("resultsSection")
     )
 
-    # ClinicalTrials.gov may expose hasResults at the top level.
-    # resultsSection is also checked as a fallback.
+
     has_results = (
         bool(study.get("hasResults"))
         or bool(results_section)
@@ -769,7 +779,7 @@ def extract_outcome_results(
                         },
                     )
 
-        # Statistical analyses.
+       
         for analysis in safe_list(
             measure.get("analyses")
         ):
@@ -1087,7 +1097,6 @@ def extract_participant_flow(
                     },
                 )
 
-        # Withdrawal / discontinuation reasons.
         for drop_withdraw in safe_list(
             period.get("dropWithdraws")
         ):
@@ -1143,8 +1152,6 @@ def extract_adverse_events(
     rows: list[dict[str, Any]],
 ) -> None:
 
-    # ClinicalTrials.gov Results use eventGroups plus
-    # event-level stats for seriousEvents and otherEvents.
     event_groups = {}
 
     for group in safe_list(
@@ -1168,7 +1175,7 @@ def extract_adverse_events(
         adverse_module.get("timeFrame")
     )
 
-    # Summary counts for each event group.
+
     for group in safe_list(
         adverse_module.get("eventGroups")
     ):
@@ -1390,13 +1397,64 @@ def extract_results(
 
 
 
+def sanitize_sheet_name(name: str) -> str:
+    """
+    Make an arbitrary asset name safe to use as an Excel sheet name:
+    strip characters Excel forbids in sheet names and cap the length.
+    """
+
+    cleaned = re.sub(
+        r'[:\\/?*\[\]]',
+        "_",
+        name,
+    ).strip()
+
+    return cleaned[:31] if cleaned else "Sheet"
+
+
+def results_sheet_name(asset: str) -> str:
+
+    max_asset_length = 31 - len(RESULTS_SHEET_SUFFIX)
+
+    base = sanitize_sheet_name(asset)[:max_asset_length]
+
+    return f"{base}{RESULTS_SHEET_SUFFIX}"
+
+
+def find_config_header_row(
+    ws,
+    max_scan: int = 20,
+) -> int:
+ 
+
+    for row in ws.iter_rows(
+        min_row=1,
+        max_row=max_scan,
+    ):
+
+        values = {
+            clean_text(cell.value)
+            for cell in row
+        }
+
+        if {"Asset", "Active"}.issubset(values):
+            return row[0].row
+
+    raise ValueError(
+        "Could not locate the Config header row "
+        "(expected a row containing 'Asset' and 'Active')."
+    )
+
+
 def parse_config(
     ws,
 ) -> list[tuple[str, str, str]]:
 
+    header_row = find_config_header_row(ws)
+
     headers = {
         clean_text(cell.value): cell.column
-        for cell in ws[CONFIG_HEADER_ROW]
+        for cell in ws[header_row]
     }
 
     required = {
@@ -1417,7 +1475,7 @@ def parse_config(
     ] = []
 
     for row in ws.iter_rows(
-        min_row=CONFIG_HEADER_ROW + 1,
+        min_row=header_row + 1,
         values_only=True,
     ):
 
@@ -1493,70 +1551,46 @@ def ensure_template_structure(
         data_only=False,
     )
 
-    expected_sheet_names = [
-        "README",
-        "Dashboard",
-        "Config",
-        "MNC-168",
-        "MNC-168_Results",
-        "BAT1306",
-        "BAT1306_Results",
-        "BAT1706",
-        "BAT1706_Results",
-        "TY101",
-        "TY101_Results",
-        "Change_Log",
+    missing_sheets = [
+        name
+        for name in REQUIRED_BASE_SHEETS
+        if name not in wb.sheetnames
     ]
 
-    if wb.sheetnames != expected_sheet_names:
+    if missing_sheets:
         raise ValueError(
-            "Template worksheet structure is wrong.\n"
-            f"Expected: {expected_sheet_names}\n"
-            f"Found: {wb.sheetnames}"
+            "Template is missing required worksheets: "
+            + ", ".join(missing_sheets)
         )
+
+    config_header_row = find_config_header_row(
+        wb["Config"]
+    )
 
     config_headers = [
         clean_text(cell.value)
         for cell in wb["Config"][
-            CONFIG_HEADER_ROW
+            config_header_row
         ]
     ]
 
-    if config_headers[:4] != [
-        "Asset",
-        "Search Term",
-        "NCT IDs",
-        "Active",
-    ]:
+    if config_headers[:4] != CONFIG_REQUIRED_HEADERS:
         raise ValueError(
-            "Config row 4 does not match the expected template."
+            "Config header row does not match the expected template "
+            f"(found {config_headers[:4]})."
         )
 
-    for asset in ASSETS:
-
-        overview_headers = [
-            clean_text(cell.value)
-            for cell in wb[asset][DATA_HEADER_ROW]
+    overview_headers = [
+        clean_text(cell.value)
+        for cell in wb[OVERVIEW_SHEET_NAME][
+            DATA_HEADER_ROW
         ]
+    ]
 
-        results_headers = [
-            clean_text(cell.value)
-            for cell in wb[f"{asset}_Results"][
-                DATA_HEADER_ROW
-            ]
-        ]
-
-        if overview_headers[:20] != OVERVIEW_COLUMNS:
-            raise ValueError(
-                f"Overview headers for {asset} "
-                "do not match the template."
-            )
-
-        if results_headers[:25] != RESULT_COLUMNS:
-            raise ValueError(
-                f"Results headers for {asset} "
-                "do not match the template."
-            )
+    if overview_headers[: len(OVERVIEW_COLUMNS)] != OVERVIEW_COLUMNS:
+        raise ValueError(
+            f"{OVERVIEW_SHEET_NAME} headers do not match the template."
+        )
 
     change_headers = [
         clean_text(cell.value)
@@ -1565,7 +1599,7 @@ def ensure_template_structure(
         ]
     ]
 
-    if change_headers[:7] != CHANGE_COLUMNS:
+    if change_headers[: len(CHANGE_COLUMNS)] != CHANGE_COLUMNS:
         raise ValueError(
             "Change_Log headers do not match the template."
         )
@@ -1583,71 +1617,68 @@ def workbook_matches_template(
             data_only=False,
         )
 
-        expected_sheet_names = [
-            "README",
-            "Dashboard",
-            "Config",
-            "MNC-168",
-            "MNC-168_Results",
-            "BAT1306",
-            "BAT1306_Results",
-            "BAT1706",
-            "BAT1706_Results",
-            "TY101",
-            "TY101_Results",
-            "Change_Log",
+        missing_sheets = [
+            name
+            for name in REQUIRED_BASE_SHEETS
+            if name not in wb.sheetnames
         ]
 
-        if wb.sheetnames != expected_sheet_names:
+        if missing_sheets:
             wb.close()
             return False
+
+        config_header_row = find_config_header_row(
+            wb["Config"]
+        )
 
         config_headers = [
             clean_text(cell.value)
             for cell in wb["Config"][
-                CONFIG_HEADER_ROW
+                config_header_row
             ]
         ]
 
-        if config_headers[:4] != [
-            "Asset",
-            "Search Term",
-            "NCT IDs",
-            "Active",
-        ]:
+        if config_headers[:4] != CONFIG_REQUIRED_HEADERS:
             wb.close()
             return False
 
-        for asset in ASSETS:
+        overview_headers = [
+            clean_text(cell.value)
+            for cell in wb[OVERVIEW_SHEET_NAME][1]
+        ]
 
-            overview_headers = [
-                clean_text(cell.value)
-                for cell in wb[asset][1]
-            ]
-
-            results_headers = [
-                clean_text(cell.value)
-                for cell in wb[
-                    f"{asset}_Results"
-                ][1]
-            ]
-
-            if overview_headers[:20] != OVERVIEW_COLUMNS:
-                wb.close()
-                return False
-
-            if results_headers[:25] != RESULT_COLUMNS:
-                wb.close()
-                return False
+        if overview_headers[: len(OVERVIEW_COLUMNS)] != OVERVIEW_COLUMNS:
+            wb.close()
+            return False
 
         change_headers = [
             clean_text(cell.value)
             for cell in wb["Change_Log"][1]
         ]
 
-        if change_headers[:7] != CHANGE_COLUMNS:
+        if change_headers[: len(CHANGE_COLUMNS)] != CHANGE_COLUMNS:
             wb.close()
             return False
+
+        # Any per-asset Results sheets that already exist (from a
+        # prior run) must still match the current schema. Sheets for
+        # assets that haven't been processed yet simply won't exist,
+        # and that's fine - they're created on demand.
+        for name in wb.sheetnames:
+
+            if (
+                name.endswith(RESULTS_SHEET_SUFFIX)
+                and name not in REQUIRED_BASE_SHEETS
+            ):
+
+                results_headers = [
+                    clean_text(cell.value)
+                    for cell in wb[name][1]
+                ]
+
+                if results_headers[: len(RESULT_COLUMNS)] != RESULT_COLUMNS:
+                    wb.close()
+                    return False
 
         wb.close()
         return True
@@ -1842,6 +1873,66 @@ def write_table(
 
 
 
+def get_overview_sheet(
+    wb,
+):
+    return wb[OVERVIEW_SHEET_NAME]
+
+
+def get_or_create_results_sheet(
+    wb,
+    asset: str,
+):
+  
+
+    sheet_name = results_sheet_name(asset)
+
+    if sheet_name in wb.sheetnames:
+        return wb[sheet_name]
+
+    ws = wb.create_sheet(sheet_name)
+
+    ws.append(RESULT_COLUMNS)
+
+    for cell in ws[1]:
+
+        cell.font = Font(
+            bold=True,
+            color="FFFFFFFF",
+        )
+
+        cell.alignment = Alignment(
+            horizontal="center",
+            vertical="center",
+            wrap_text=True,
+        )
+
+        cell.fill = RESULTS_HEADER_FILL
+
+    ws.freeze_panes = "A2"
+    ws.sheet_view.showGridLines = False
+
+ 
+    if "Change_Log" in wb.sheetnames:
+
+        target_index = wb.sheetnames.index(
+            "Change_Log"
+        )
+
+        wb._sheets.remove(ws)
+        wb._sheets.insert(
+            target_index,
+            ws,
+        )
+
+    logger.info(
+        "Created new Results worksheet: %s",
+        sheet_name,
+    )
+
+    return ws
+
+
 def append_change(
     ws,
     asset: str,
@@ -1947,11 +2038,12 @@ def update_asset_sheet(
     change_log_ws,
 ) -> int:
 
-    overview_ws = wb[asset]
+    overview_ws = get_overview_sheet(wb)
 
-    results_ws = wb[
-        f"{asset}_Results"
-    ]
+    results_ws = get_or_create_results_sheet(
+        wb,
+        asset,
+    )
 
     old_overview = index_overview(
         overview_ws
@@ -2001,9 +2093,7 @@ def update_asset_sheet(
             )
         )
 
-        # Change log is handled independently.
-        # It cannot prevent the study/results
-        # from being written.
+
         try:
 
             add_changes(
@@ -2071,46 +2161,52 @@ def update_dashboard(
     config_items: list[
         tuple[str, str, str]
     ],
+    data_timestamp: str = "",
 ) -> None:
 
     ws = wb["Dashboard"]
+
+    overview_ws = get_overview_sheet(wb)
 
     unique_ncts: set[str] = set()
     studies_with_results = 0
     result_rows = 0
 
+
+## JX: change here, all studies share the same worksheet
+## modify here if want to seperate later
+    for record in row_records(
+        overview_ws,
+        OVERVIEW_COLUMNS,
+    ):
+
+        nct_id = clean_text(
+            record.get("NCT ID")
+        ).upper()
+
+        if nct_id:
+            unique_ncts.add(
+                nct_id
+            )
+
+        if (
+            clean_text(
+                record.get("Has Results")
+            ).upper()
+            == "TRUE"
+        ):
+            studies_with_results += 1
+
     for asset, _, _ in config_items:
 
-        if asset not in wb.sheetnames:
+        sheet_name = results_sheet_name(asset)
+
+        if sheet_name not in wb.sheetnames:
             continue
-
-        for record in row_records(
-            wb[asset],
-            OVERVIEW_COLUMNS,
-        ):
-
-            nct_id = clean_text(
-                record.get("NCT ID")
-            ).upper()
-
-            if nct_id:
-                unique_ncts.add(
-                    nct_id
-                )
-
-            if (
-                clean_text(
-                    record.get("Has Results")
-                ).upper()
-                == "TRUE"
-            ):
-                studies_with_results += 1
 
         result_rows += max(
             0,
-            wb[
-                f"{asset}_Results"
-            ].max_row - 1,
+            wb[sheet_name].max_row - 1,
         )
 
     metrics = {
@@ -2123,9 +2219,12 @@ def update_dashboard(
         "Studies With Posted Results": (
             studies_with_results
         ),
-        "Result Rows": result_rows,
-        "Last Run": datetime.now().astimezone().isoformat(
-            timespec="seconds"
+        "Total Result Rows": result_rows,
+        "Last API Data Timestamp": (
+            data_timestamp
+            or datetime.now().astimezone().isoformat(
+                timespec="seconds"
+            )
         ),
     }
 
@@ -2250,6 +2349,8 @@ def main() -> int:
             )
         }
     )
+
+    data_timestamp = ""
 
     try:
 
@@ -2413,19 +2514,23 @@ def main() -> int:
                     asset,
                 )
 
-        total_studies += (
-            update_asset_sheet(
-                wb,
-                asset,
-                successful,
-                change_log_ws,
-            )
+        update_asset_sheet(
+            wb,
+            asset,
+            successful,
+            change_log_ws,
         )
 
-   
+    total_studies = len(
+        index_overview(
+            get_overview_sheet(wb)
+        )
+    )
+
     update_dashboard(
         wb,
         config_items,
+        data_timestamp,
     )
 
     wb.save(
